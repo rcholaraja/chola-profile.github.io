@@ -34,7 +34,7 @@ const CONFIG = {
       linkedin: "https://www.linkedin.com/in/chola/",
       github: "https://github.com/rcholaraja",
       twitter: "", // Leave empty if not applicable
-      website: "", // Personal website/blog if any
+      website: "https://rcholaraja.github.io/chola-profile.github.io/",
     },
     
     // Call-to-action buttons in hero section
