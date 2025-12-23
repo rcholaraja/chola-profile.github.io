@@ -18,7 +18,15 @@ function initializePageContent() {
 
   // Update hero section
   document.getElementById('hero-name').textContent = CONFIG.personalInfo.name;
-  document.getElementById('hero-title').textContent = CONFIG.personalInfo.title;
+  
+  // Update hero title - use titles array if available, otherwise use single title
+  const heroTitleElement = document.getElementById('hero-title');
+  if (CONFIG.personalInfo.titles && CONFIG.personalInfo.titles.length > 0) {
+    heroTitleElement.innerHTML = CONFIG.personalInfo.titles.map(title => `<span class="title-line">${title}</span>`).join('');
+  } else {
+    heroTitleElement.textContent = CONFIG.personalInfo.title;
+  }
+  
   document.getElementById('hero-description').textContent = CONFIG.personalInfo.description;
   document.getElementById('profile-image').src = CONFIG.personalInfo.profileImage;
   document.getElementById('profile-image').alt = `${CONFIG.personalInfo.name} - Professional Photo`;
@@ -51,6 +59,9 @@ function initializePageContent() {
 
   // Update Projects section
   populateProjectsSection();
+
+  // Update Languages & Hobbies section
+  populateLanguagesHobbiesSection();
 
   // Update Contact section
   populateContactSection();
@@ -253,6 +264,37 @@ function populateProjectsSection() {
   });
 
   projectsGrid.innerHTML = html;
+}
+
+function populateLanguagesHobbiesSection() {
+  const languagesHobbiesGrid = document.getElementById('languages-hobbies-grid');
+  let html = '';
+  
+  // Languages section
+  if (CONFIG.about.languages && CONFIG.about.languages.length > 0) {
+    html += `
+      <div class="languages-hobbies-card">
+        <h3><i class="fas fa-language"></i> Languages Known</h3>
+        <div class="detail-tags">
+          ${CONFIG.about.languages.map(lang => `<span class="detail-tag">${lang}</span>`).join('')}
+        </div>
+      </div>
+    `;
+  }
+  
+  // Hobbies section
+  if (CONFIG.about.hobbies && CONFIG.about.hobbies.length > 0) {
+    html += `
+      <div class="languages-hobbies-card">
+        <h3><i class="fas fa-heart"></i> Hobbies & Interests</h3>
+        <div class="detail-tags">
+          ${CONFIG.about.hobbies.map(hobby => `<span class="detail-tag">${hobby}</span>`).join('')}
+        </div>
+      </div>
+    `;
+  }
+  
+  languagesHobbiesGrid.innerHTML = html;
 }
 
 function populateContactSection() {

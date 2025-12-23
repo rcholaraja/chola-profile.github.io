@@ -20,7 +20,14 @@ const CONFIG = {
   // ===========================
   personalInfo: {
     name: "CHOLA",
-    title: "SAP Commerce Cloud Certified Architect | Works @SAP Labs | 10+ Years Experience | BTP Consultant | SAP AI Core Developer | Alpinist | Runner |",
+    title: "SAP Commerce Cloud Certified Architect | SAP BTP & Business AI Strategist | Enterprise Commerce & Cloud Solutions | SAP Labs | 10+ Years Experience | Alpinist | Runner",
+    titles: [
+      "SAP Commerce Cloud Certified Architect",
+      "Enterprise Commerce & Cloud Solutions",
+      "SAP BTP & Business AI Strategist",
+      "SAP Labs | 10+ Years Experience",
+      "Alpinist | Runner"
+    ],
     description: "A competent professional offering 10 years of real-time experience in SAP Commerce Cloud (Hybris) Development and Business consulting for leading global service delivery operations across e-Commerce, Retail, Fashion and Pharma industries.",
     email: "rcholaraja@gmail.com",
     phone: "+91 77955-61343",
@@ -67,8 +74,11 @@ const CONFIG = {
       //{ number: 5, label: "Companies Worked" }
     ],
     
+    // Languages
+    languages: ["Tamil (Mother tongue)", "English", "Hindi", "Kannada", "Malayalam"],
+    
     // Hobbies
-    hobbies: ["Running", "Trekking", "Cooking", "Gardening"]
+    hobbies: ["Running", "Trekking", "Cooking", "Gardening", "Listening Music"]
   },
 
   // ===========================

@@ -205,6 +205,14 @@ body {
   margin-bottom: var(--spacing-md);
   opacity: 0.95;
   animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title-line {
+  display: block;
+  line-height: 1.4;
 }
 
 .hero-description {
@@ -349,6 +357,52 @@ section {
   color: var(--text-secondary);
   margin-bottom: var(--spacing-md);
   line-height: 1.8;
+}
+
+.about-section-detail {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--light-bg);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.about-section-detail h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-section-detail h4 i {
+  color: var(--primary-color);
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: var(--spacing-sm);
+}
+
+.detail-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: white;
+  color: var(--text-primary);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 2px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.detail-tag:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
 }
 
 .about-stats {
@@ -847,6 +901,50 @@ section {
 }
 
 /* ===========================
+   Languages & Hobbies Section
+   =========================== */
+.languages-hobbies {
+  background: white;
+  padding: var(--spacing-xl) 0;
+}
+
+.languages-hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.languages-hobbies-card {
+  background: var(--light-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.languages-hobbies-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.languages-hobbies-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.languages-hobbies-card h3 i {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+/* ===========================
    Contact Section
    =========================== */
 .contact {
@@ -1170,6 +1268,10 @@ section {
   
   .projects-grid,
   .education-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .languages-hobbies-grid {
     grid-template-columns: 1fr;
   }
 }
