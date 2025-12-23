@@ -163,17 +163,19 @@ const CONFIG = {
       { name: "SAP Commerce Cloud (Hybris)", level: 95 },
       { name: "Java/J2EE", level: 92 },
       { name: "Spring Framework", level: 90 },
+      { name: "Cloud Integration (CPI)", level: 90 },
       { name: "RESTful Web Services", level: 88 }
     ],
     "Frontend Development": [
       { name: "JSP/JSTL", level: 85 },
       { name: "JavaScript", level: 82 },
       { name: "CSS", level: 80 },
+      { name: "Spartacus", level: 80 },
       { name: "SAP UI5", level: 75 }
     ],
     "Database & Servers": [
-      { name: "Oracle", level: 85 },
-      { name: "MySQL", level: 82 },
+      { name: "Azure SQL", level: 85 },
+      { name: "SAP HANA DB", level: 82 },
       { name: "HSQL", level: 80 },
       { name: "Tomcat", level: 88 },
       { name: "Solr Search Server", level: 78 }
@@ -183,13 +185,13 @@ const CONFIG = {
       { name: "Confluence", level: 85 },
       { name: "GitHub", level: 88 },
       { name: "BitBucket", level: 85 },
-      { name: "Tortoise Git", level: 80 },
-      { name: "SharePoint", level: 75 }
+      { name: "SharePoint", level: 80 }
     ],
     "Development Tools": [
-      { name: "Eclipse IDE", level: 90 },
+      { name: "Visual Studio Code", level: 90 },
       { name: "IntelliJ IDEA", level: 88 },
-      { name: "AWS", level: 75 },
+      { name: "Eclipse IDE", level: 85 },
+      { name: "AWS", level: 80 },
       { name: "Agile/Scrum", level: 92 }
     ]
   },
