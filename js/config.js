@@ -227,6 +227,42 @@ const CONFIG = {
   ],
 
   // ===========================
+  // Awards & Recognition
+  // ===========================
+  awards: [
+    {
+      title: "We Win as ONE",
+      organization: "SAP",
+      icon: "trophy"
+    },
+    {
+      title: "We Embrace CURIOSITY",
+      organization: "SAP",
+      icon: "lightbulb"
+    },
+    {
+      title: "We Take CHARGE",
+      organization: "SAP",
+      icon: "bolt"
+    },
+    {
+      title: "Keep the Promise",
+      organization: "SAP",
+      icon: "handshake"
+    },
+    {
+      title: "Rising Star",
+      organization: "SAP",
+      icon: "star"
+    },
+    {
+      title: "Special Mention Award",
+      organization: "SAP",
+      icon: "award"
+    }
+  ],
+
+  // ===========================
   // Education
   // ===========================
   education: [

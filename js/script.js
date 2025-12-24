@@ -54,6 +54,9 @@ function initializePageContent() {
   // Update Certifications section
   populateCertificationsSection();
 
+  // Update Awards section
+  populateAwardsSection();
+
   // Update Education section
   populateEducationSection();
 
@@ -233,6 +236,27 @@ function populateCertificationsSection() {
   });
 
   certificationsGrid.innerHTML = html;
+}
+
+function populateAwardsSection() {
+  const awardsGrid = document.getElementById('awards-grid');
+  let html = '';
+
+  CONFIG.awards.forEach(award => {
+    html += `
+      <div class="award-card">
+        <div class="award-icon">
+          <i class="fas fa-${award.icon}"></i>
+        </div>
+        <div class="award-content">
+          <h3>${award.title}</h3>
+          <p class="award-organization">${award.organization}</p>
+        </div>
+      </div>
+    `;
+  });
+
+  awardsGrid.innerHTML = html;
 }
 
 function populateProjectsSection() {
