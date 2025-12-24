@@ -727,7 +727,7 @@ section {
 }
 
 .award-card:hover {
-  border-color: var(--accent-color);
+  border-color: var(--primary-color);
   transform: translateY(-5px);
   box-shadow: var(--box-shadow-lg);
 }
@@ -740,10 +740,10 @@ section {
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
-  color: var(--accent-color);
+  color: var(--primary-color);
   flex-shrink: 0;
   background: white;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--primary-color);
 }
 
 .award-content {

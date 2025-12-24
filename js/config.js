@@ -313,20 +313,20 @@ const CONFIG = {
         github: ""
       }
     },
-      {
-      title: "Tacobell E-Commerce Platform (Publicis Sapient)",
-      description: "Developed end-to-end e-commerce application for Tacobell food industry with customized checkout journey, pick up in store, Drive thru, Corporate orders, loyalty program and order management module using RESTful web services, and omni-channel responsive design.",
-      image: "images/project5.jpg",
+    {
+      title: "Fashion E-Commerce Platform (Accenture)",
+      description: "Developed end-to-end e-commerce application for fashion industry with customized checkout journey, order management module using RESTful web services, and omni-channel responsive design.",
+      image: "images/project1.jpg",
       technologies: ["SAP Commerce Cloud", "Java", "Spring", "RESTful APIs", "JSP", "JavaScript"],
       links: {
         demo: "",
         github: ""
       }
     },
-    {
-      title: "Fashion E-Commerce Platform (Accenture)",
-      description: "Developed end-to-end e-commerce application for fashion industry with customized checkout journey, order management module using RESTful web services, and omni-channel responsive design.",
-      image: "images/project1.jpg",
+          {
+      title: "Tacobell E-Commerce Platform (Publicis Sapient)",
+      description: "Developed end-to-end e-commerce application for Tacobell food industry with customized checkout journey, pick up in store, Drive thru, Corporate orders, loyalty program and order management module using RESTful web services, and omni-channel responsive design.",
+      image: "images/project5.jpg",
       technologies: ["SAP Commerce Cloud", "Java", "Spring", "RESTful APIs", "JSP", "JavaScript"],
       links: {
         demo: "",
